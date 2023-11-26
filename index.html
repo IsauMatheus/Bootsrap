@@ -9,35 +9,34 @@
 </head>
 <body>
     <style type="text/css">
-        .list-group{
-            width: 600px;
-            margin: 20px;
-        }
+
     </style>
     <div class="container">
-        <div class="list-group">
-            <a href="" class="list-group-item list-group-item-action">
-                <div class="d-flex justify-content-between">
-                    <h5>Titulo da notícia</h5>
-                    <small>2 dias atrás</small>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#janela">Cliqui aqui para abrir</button>
+        <div class="modal fade" id="janela">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Titulo modal</h5>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                item1
+                            </div>
+                            <div class="col">
+                                item2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" >Salvar</button>
+                        <button class="btn btn-danger" data-dismiss="modal"="">Cancelar</button>
+                    </div>
                 </div>
-                <p>algum resumo da noticia acima</p>
-            </a>
-            <a href="" class="list-group-item list-group-item-action">
-                <div class="d-flex justify-content-between">
-                    <h5>Titulo da notícia</h5>
-                    <small>2 dias atrás</small>
-                </div>
-                <p>algum resumo da noticia acima</p>
-            </a>
-            <a href="" class="list-group-item list-group-item-action">
-                <div class="d-flex justify-content-between">
-                    <h5>Titulo da notícia</h5>
-                    <small>2 dias atrás</small>
-                </div>
-                <p>algum resumo da noticia acima</p>
-            </a>
-        </div>
+            </div>
+        </div>        
     </div>
     <script type="text/javascript" src="Assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="Assets/js/bootstrap.bundle.min.js"></script>
